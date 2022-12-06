@@ -1,0 +1,33 @@
+{
+  "name": "for-johoshozai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "情報商材屋を救いたい",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadnessOjisan/for-johoshozai.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sadnessOjisan/for-johoshozai/issues"
+  },
+  "homepage": "https://github.com/sadnessOjisan/for-johoshozai#readme",
+  "devDependencies": {
+    "@types/node": "18.11.11",
+    "@types/react": "18.0.26",
+    "typescript": "4.9.3"
+  },
+  "dependencies": {
+    "@vercel/og": "^0.0.21",
+    "next": "^13.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.40.0"
+  }
+}
