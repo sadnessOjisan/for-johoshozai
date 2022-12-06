@@ -5,11 +5,8 @@ import { useEffect, useState } from "react";
 export default () => {
   const router = useRouter();
   const query = router.query["selected"];
-  const [host, setHost] = useState("https://4johoshozai.vercel.app");
+  const host = "https://4johoshozai.vercel.app";
 
-  useEffect(() => {
-    setHost(window.location.origin);
-  }, []);
   return (
     <div>
       <Head>
