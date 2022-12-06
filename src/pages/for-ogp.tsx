@@ -1,12 +1,13 @@
+import { GetServerSideProps } from "next";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+interface Props {
+  query: string;
+}
 
-export default () => {
-  const router = useRouter();
-  const { selected } = router.query;
+export default (props: Props) => {
+  const selected = props.query;
   const host = "https://4johoshozai.vercel.app";
-
   return (
     <div>
       <Head>
@@ -22,4 +23,13 @@ export default () => {
       <img src={`${host}/api/image?selected=${selected}`} />
     </div>
   );
+};
+
+export const getServerSideProps: GetServerSideProps<Props> = async (ctx) => {
+  const query = ctx.query["selected"];
+  return {
+    props: {
+      query: String(query),
+    },
+  };
 };
