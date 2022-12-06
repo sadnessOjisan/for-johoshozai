@@ -31,6 +31,7 @@ export default () => {
           property="og:image"
           content={`${host}/api/image?selected=ミュートされた情報商材屋を救う`}
         />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <h1>ミュートされた情報商材屋を救いたい</h1>
       <h2>SNSを伸ばす魔法の言葉</h2>

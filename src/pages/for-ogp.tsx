@@ -19,6 +19,7 @@ export default () => {
           property="og:image"
           content={`${host}/api/image?selected=${query}`}
         />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <img src={`${host}/api/image?selected=${query}`} />
     </div>
