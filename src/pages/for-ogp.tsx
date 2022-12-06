@@ -10,6 +10,7 @@ export default () => {
   return (
     <div>
       <Head>
+        <meta property="og:url" content={`${host}/for-ogp`} />
         <meta property="og:title" content="4johoshozai" />
         <meta property="og:description" content={`${selected} | 4johoshozai`} />
         <meta
